@@ -1,0 +1,322 @@
+/* RESET */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* BODY */
+
+body{
+    font-family:Arial, sans-serif;
+    background:#f4f4f4;
+    color:#222;
+}
+
+/* HEADER */
+
+header{
+    position:fixed;
+    top:0;
+    width:100%;
+
+    background:linear-gradient(to right,#1e3a8a,#2563eb);
+
+    padding:15px 30px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    z-index:1000;
+}
+
+.logo{
+    color:white;
+    font-size:25px;
+    font-weight:bold;
+}
+
+nav{
+    display:flex;
+    gap:20px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+/* MAIN */
+
+main{
+    padding-top:100px;
+}
+
+/* HERO */
+
+.hero{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    gap:40px;
+
+    padding:50px;
+
+    flex-wrap:wrap;
+}
+
+.hero-texto{
+    max-width:400px;
+}
+
+.hero-texto h1{
+    font-size:45px;
+    margin-bottom:15px;
+}
+
+.hero-texto p{
+    margin-bottom:20px;
+    line-height:1.5;
+}
+
+.hero img{
+    width:250px;
+    border-radius:20px;
+
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+}
+
+/* BOTON */
+
+button{
+    background:#2563eb;
+    color:white;
+
+    border:none;
+
+    padding:12px 20px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+}
+
+/* TITULOS */
+
+.titulo{
+    text-align:center;
+    margin-bottom:30px;
+    font-size:35px;
+}
+
+/* SOBRE */
+
+.sobre{
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+
+    gap:20px;
+
+    padding:50px;
+}
+
+.card{
+    background:white;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+.card h2{
+    margin-bottom:15px;
+}
+
+.card ul{
+    padding-left:20px;
+}
+
+/* TABLA */
+
+#horarios{
+    padding:50px;
+}
+
+table{
+    width:100%;
+    max-width:900px;
+
+    margin:auto;
+
+    border-collapse:collapse;
+
+    background:white;
+
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+th{
+    background:#2563eb;
+    color:white;
+
+    padding:15px;
+}
+
+td{
+    padding:15px;
+
+    text-align:center;
+
+    border:1px solid #ddd;
+}
+
+tr:nth-child(even){
+    background:#f1f5f9;
+}
+
+tr:nth-child(odd){
+    background:#ffffff;
+}
+
+/* PROYECTOS */
+
+#proyectos{
+    padding:50px;
+}
+
+.proyectos{
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+
+    gap:20px;
+}
+
+.proyecto{
+    background:white;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+/* CONTACTO */
+
+#contacto{
+    padding:50px;
+}
+
+.formulario{
+    max-width:500px;
+
+    margin:auto;
+
+    display:flex;
+    flex-direction:column;
+
+    gap:15px;
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+input,
+textarea{
+    padding:12px;
+
+    border:1px solid #ccc;
+
+    border-radius:10px;
+}
+
+textarea{
+    min-height:120px;
+}
+
+/* REDES */
+
+.redes{
+    margin-top:30px;
+
+    display:flex;
+    justify-content:center;
+
+    gap:20px;
+}
+
+.redes a{
+    text-decoration:none;
+
+    color:#2563eb;
+
+    font-weight:bold;
+}
+
+/* FOOTER */
+
+footer{
+    background:#111;
+    color:white;
+
+    text-align:center;
+
+    padding:20px;
+
+    margin-top:40px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:480px){
+
+    header{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    nav{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .hero{
+        text-align:center;
+        padding:20px;
+    }
+
+    .hero-texto h1{
+        font-size:30px;
+    }
+
+    .hero img{
+        width:180px;
+    }
+
+    .titulo{
+        font-size:28px;
+    }
+
+    #proyectos,
+    #contacto,
+    #horarios,
+    .sobre{
+        padding:20px;
+    }
+
+}
